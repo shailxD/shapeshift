@@ -53,6 +53,10 @@
   }
 }
 
+@utility link {
+  @apply font-medium underline underline-offset-4;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

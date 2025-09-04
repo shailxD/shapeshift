@@ -9,46 +9,47 @@ export function NotFound({ className }: { className?: string }) {
     <div
       className={cn(
         "flex h-screen flex-col items-center justify-center",
-        className
+        className,
       )}
     >
       <svg
-        viewBox="0 0 451 451"
+        width="120"
+        height="122"
         fill="none"
+        viewBox="0 0 120 122"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-42 w-full text-neutral-800 dark:text-neutral-200"
+        className="text-neutral-800 dark:text-neutral-200"
       >
-        <g clipPath="url(#clip0_825_5967)">
-          <path
-            d="M300.5 0.5H150.5V150.5H300.5V0.5Z"
-            stroke="currentColor"
-            strokeMiterlimit="10"
-            fill="none"
-          />
-          <path
-            d="M300.5 300.5V450.5H0.5V150.5H150.5V300.5H300.5Z"
-            stroke="currentColor"
-            strokeMiterlimit="10"
-            fill="none"
-          />
-          <path
-            d="M450.5 0.5H375.5V75.5H450.5V0.5Z"
-            stroke="currentColor"
-            strokeMiterlimit="10"
-            fill="none"
-          />
-          <path
-            d="M450.5 150.5H300.5V300.5H450.5V150.5Z"
-            stroke="currentColor"
-            strokeMiterlimit="10"
-            fill="none"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_825_5967">
-            <rect width="451" height="451" fill="white" />
-          </clipPath>
-        </defs>
+        <path
+          d="M76.045 105.158C69.87 107.676 63.113 109.064 56.032 109.064C26.743 109.064 3 85.321 3 56.032C3 26.743 26.743 3 56.032 3C85.321 3 109.064 26.743 109.064 56.032C109.064 63.959 107.325 71.479 104.207 78.233"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+        />
+        <path
+          d="M78.4649 109.715C74.4949 110.859 70.2999 111.473 65.9619 111.473C41.0799 111.473 20.9089 91.302 20.9089 66.42C20.9089 41.538 41.0799 21.3669 65.9619 21.3669C90.8439 21.3669 111.015 41.538 111.015 66.42C111.015 71.473 110.183 76.333 108.649 80.868"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+        />
+        <path
+          d="M81.7819 113.416C79.8629 113.722 77.8959 113.881 75.8909 113.881C55.4149 113.881 38.8159 97.282 38.8159 76.806C38.8159 56.33 55.4149 39.731 75.8909 39.731C96.3669 39.731 112.966 56.33 112.966 76.806C112.966 79.115 112.755 81.374 112.351 83.566"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+        />
+        <path
+          d="M85.8201 116.291C69.7511 116.291 56.7241 103.264 56.7241 87.195C56.7241 71.126 69.7511 58.099 85.8201 58.099C101.889 58.099 114.916 71.126 114.916 87.195C114.916 88.049 114.879 88.894 114.807 89.729"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+        />
+        <path
+          d="M116.57 100.986C118.45 89.476 110.643 78.6214 99.1334 76.7414C87.6235 74.8614 76.7689 82.6679 74.8889 94.1777C73.0089 105.688 80.8154 116.542 92.3252 118.422C103.835 120.302 114.69 112.496 116.57 100.986Z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+        />
       </svg>
 
       <h1 className="mt-8 mb-6 font-mono text-8xl font-medium">404</h1>
