@@ -1,3 +1,10 @@
+import { ToolsProps } from "@/types/site";
+import {
+  IconBorderRadius,
+  IconFileTypePng,
+  IconShape,
+} from "@tabler/icons-react";
+
 export const USER = {
   firstName: "Shail",
   lastName: "Teotia",
@@ -28,3 +35,27 @@ export const META_THEME_COLORS = {
   light: "#ffffff",
   dark: "#09090b",
 };
+
+export const TOOLS: Array<ToolsProps> = [
+  {
+    id: "svg-to-png",
+    title: "SVG to PNG Converter",
+    description: "Convert SVG files to high-quality PNG images",
+    href: "/svg-to-png",
+    icon: IconFileTypePng,
+  },
+  {
+    id: "square-image",
+    title: "Square Image Generator",
+    description: "Transform any image into a perfect square",
+    href: "/square-image",
+    icon: IconShape,
+  },
+  {
+    id: "corner-rounder",
+    title: "Corner Rounder",
+    description: "Add rounded corners to your images",
+    href: "/rounded-border",
+    icon: IconBorderRadius,
+  },
+];

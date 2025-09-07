@@ -10,6 +10,7 @@ export const HeaderSection = () => {
         "flex items-center justify-between",
         "w-full max-w-screen",
         "px-4 py-2",
+        "sticky top-0 z-50",
       )}
     >
       <div className="flex items-center gap-3">

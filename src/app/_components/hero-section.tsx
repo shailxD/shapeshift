@@ -10,7 +10,9 @@ export const HeroSection = () => {
       )}
     >
       <h1 className="text-xl">{USER.heroSection.title}</h1>
-      <p className="text-gray-600">{USER.heroSection.subtitle}</p>
+      <p className="text-neutral-600 dark:text-neutral-400">
+        {USER.heroSection.subtitle}
+      </p>
     </div>
   );
 };
