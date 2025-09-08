@@ -77,14 +77,16 @@ shapeshift/
 │   │   │   │   ├── rounded-border/   # Rounded border tool
 │   │   │   │   ├── square-image/     # Square image tool
 │   │   │   │   ├── svg-to-png/       # SVG to PNG converter
-│   │   │   │   └── svg-to-react/     # SVG to React component tool
+│   │   │   │   ├── svg-to-react/     # SVG to React component tool
+│   │   │   │   └── png-to-webp/      # PNG to WebP component tool
 │   │   │   └── layout.tsx            # Main app layout
 │   │   ├── _components/              # App-specific components
 │   │   │   ├── tools/                # Tool implementations
 │   │   │   │   ├── rounded-border-tool/
 │   │   │   │   ├── square-image-tool/
 │   │   │   │   ├── svg-to-png-tool/
-│   │   │   │   └── svg-to-react-tool/
+│   │   │   │   ├── svg-to-react-tool/
+│   │   │   │   └── png-to-webp-tool/
 │   │   │   ├── footer-section.tsx
 │   │   │   ├── header-section.tsx
 │   │   │   ├── hero-section.tsx
@@ -199,6 +201,7 @@ Current tools in the project:
 - **Square Image Tool**: Convert images to square format
 - **SVG to PNG Tool**: Convert SVG files to PNG format
 - **SVG to React Tool**: Convert SVG files to React components
+- **PNG to WebP Tool**: Convert PNG files to WebP format
 
 ---
 

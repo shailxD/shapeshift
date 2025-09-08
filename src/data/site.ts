@@ -4,6 +4,7 @@ import {
   IconFileTypePng,
   IconShape,
   IconCode,
+  IconPhoto,
 } from "@tabler/icons-react";
 
 export const USER = {
@@ -46,6 +47,13 @@ export const TOOLS: Array<ToolsProps> = [
     description: "Convert SVG files to high-quality PNG images",
     href: "/svg-to-png",
     icon: IconFileTypePng,
+  },
+  {
+    id: "png-to-webp",
+    title: "PNG to WebP Converter",
+    description: "Convert PNG files to WebP format with better compression",
+    href: "/png-to-webp",
+    icon: IconPhoto,
   },
   {
     id: "svg-to-react",
