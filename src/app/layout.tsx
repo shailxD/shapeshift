@@ -13,6 +13,24 @@ export const metadata: Metadata = {
   },
   description: SITE_INFO.description,
   creator: USER.username,
+  openGraph: {
+    siteName: SITE_INFO.name,
+    url: "/",
+    type: "website",
+    images: [
+      {
+        url: SITE_INFO.ogImage,
+        width: 1200,
+        height: 630,
+        alt: SITE_INFO.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@shail_teotia", // Twitter username
+    images: [SITE_INFO.ogImage],
+  },
   icons: {
     icon: [
       {

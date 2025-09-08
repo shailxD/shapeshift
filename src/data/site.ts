@@ -25,7 +25,9 @@ export const SOURCE_CODE_GITHUB_URL = "https://github.com/shailxD/shapeshift";
 
 export const SITE_INFO = {
   name: "ShapeShift",
+  url: process.env.NEXT_APP_URL || "https://shapeshift-tau.vercel.app",
   subtitle: "Fast, Free, Simple Image Tools",
+  ogImage: "/screenshot-og-image-white.png",
   description:
     "A growing set of image tools. All free. Simple. No BS. Built because the existing ones were annoying or simple enough.",
   keywords:
@@ -61,7 +63,7 @@ export const TOOLS: Array<ToolsProps> = [
     icon: IconShape,
   },
   {
-    id: "corner-rounder",
+    id: "rounded-border",
     title: "Corner Rounder",
     description: "Add rounded corners to your images",
     href: "/rounded-border",
