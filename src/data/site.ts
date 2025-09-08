@@ -3,6 +3,7 @@ import {
   IconBorderRadius,
   IconFileTypePng,
   IconShape,
+  IconCode,
 } from "@tabler/icons-react";
 
 export const USER = {
@@ -43,6 +44,14 @@ export const TOOLS: Array<ToolsProps> = [
     description: "Convert SVG files to high-quality PNG images",
     href: "/svg-to-png",
     icon: IconFileTypePng,
+  },
+  {
+    id: "svg-to-react",
+    title: "SVG to React Component",
+    description:
+      "Convert SVG files to React components with TypeScript support",
+    href: "/svg-to-react",
+    icon: IconCode,
   },
   {
     id: "square-image",

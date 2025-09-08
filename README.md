@@ -29,6 +29,7 @@ Check out the live site: [shapeshift-tau.vercel.app](https://shapeshift-tau.verc
 - SVG → PNG Converter
 - Square Image Generator
 - Corner Rounder
+- SVG → React Component
 
 ...and more coming soon 🚀
 
