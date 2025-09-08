@@ -1,3 +1,5 @@
+import { RoundedTool } from "@/app/_components/tools/rounded-border-tool";
+
 export const metadata = {
   title: "Border Rounder",
   description:
@@ -5,10 +7,5 @@ export const metadata = {
 };
 
 export default function RoundedBorderPage() {
-  return (
-    <div>
-      <h1>Rounded Border Tool</h1>
-      <p>Upload an image to add rounded borders.</p>
-    </div>
-  );
+  return <RoundedTool />;
 }

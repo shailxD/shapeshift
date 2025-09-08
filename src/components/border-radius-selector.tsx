@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
-interface SVGScaleSelectorProps {
+interface BorderRadiusSelectorProps {
   title: string;
   options: number[];
   selected: number | "custom";
@@ -11,14 +11,14 @@ interface SVGScaleSelectorProps {
   onCustomValueChange?: (value: number) => void;
 }
 
-export function SVGScaleSelector({
+export function BorderRadiusSelector({
   title,
   options,
   selected,
   onChange,
   customValue,
   onCustomValueChange,
-}: SVGScaleSelectorProps) {
+}: BorderRadiusSelectorProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const selectedRef = useRef<HTMLButtonElement>(null);
   const highlightRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ export function SVGScaleSelector({
   }, [selected]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = Math.min(64, parseFloat(e.target.value));
+    const value = Math.min(999, Math.max(0, parseInt(e.target.value) || 0));
     onCustomValueChange?.(value);
   };
 
@@ -55,7 +55,10 @@ export function SVGScaleSelector({
     const newValue =
       e.key === "ArrowUp" ? currentValue + step : currentValue - step;
 
-    const clampedValue = Math.min(64, Math.max(0, Number(newValue.toFixed(1))));
+    const clampedValue = Math.min(
+      999,
+      Math.max(0, Number(newValue.toFixed(1))),
+    );
     onCustomValueChange?.(clampedValue);
   };
 
@@ -84,30 +87,35 @@ export function SVGScaleSelector({
                   : "text-foreground/80 hover:text-foreground"
               }`}
             >
-              {option === "custom" ? "Custom" : `${option}×`}
+              {option === "custom" ? "Custom" : option}
             </button>
           ))}
         </div>
         {selected === "custom" && (
           <div className="flex flex-col items-center gap-2">
             <Label
-              htmlFor="custom-scale"
+              htmlFor="custom-radius"
               className="text-muted-foreground text-xs"
             >
-              Custom Scale
+              Custom Radius
             </Label>
-            <Input
-              id="custom-scale"
-              type="number"
-              min="0"
-              max="64"
-              step="1"
-              value={customValue}
-              onChange={handleInputChange}
-              onKeyDown={handleKeyDown}
-              className="w-24 text-center"
-              placeholder="1.0"
-            />
+            <div className="relative">
+              <Input
+                id="custom-radius"
+                type="number"
+                min="0"
+                max="999"
+                step="1"
+                value={customValue}
+                onChange={handleInputChange}
+                onKeyDown={handleKeyDown}
+                className="w-24 pr-8 text-center"
+                placeholder="0"
+              />
+              <span className="text-muted-foreground absolute top-1/2 right-3 -translate-y-1/2 text-xs">
+                px
+              </span>
+            </div>
           </div>
         )}
       </div>
